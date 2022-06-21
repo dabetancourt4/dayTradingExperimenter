@@ -80,7 +80,7 @@ if __name__ == "__main__":
     stop_loss_input.insert(0,'5')
     month_label = tk.Label(text="# Previous months to simulate:", bg='white')
     month_input = tk.Scale(orient='horizontal', length=180, from_=1, to=12, bg='white')
-    enter_button = tk.Button(text = 'Run Scenario', command = lambda: run_scenario('OOW3ZHH028NNAMQN', ticker_input.get(), pct_buy_input.get(), pct_sell_input.get(), stop_loss_input.get(), int(month_input.get())))
+    enter_button = tk.Button(text = 'Run Scenario', command = lambda: run_scenario('OOW3ZHH028NNAMQN', ticker_input.get().upper(), pct_buy_input.get(), pct_sell_input.get(), stop_loss_input.get(), int(month_input.get())))
     results_title = tk.Label(text='Results:', bg='white', font='bold 12')
     
     explanation_title.grid(row=1,column=0, padx=25, sticky='SW', pady=5)
